@@ -11,28 +11,34 @@ body {
 }
 .cardProduct {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  gap: 5%;
+  div {
+    flex: 1;
+    padding:7%
+  }
 }
 
 img {
   margin: 0 auto;
-  margin-bottom:5%;
+  margin-bottom: 5%;
+  width: 80%;
 }
-
-
+.products {
+  cursor: pointer;
+}
 
 mat-card {
   padding: 2.5%;
   margin-top: 10%;
-  width: 40%;
+  width: 100%;
 
-  mat-card-title{
+  mat-card-title {
     text-align: center;
   }
-
 }
 
-mat-card-content{
+mat-card-content {
   text-align: center;
 }

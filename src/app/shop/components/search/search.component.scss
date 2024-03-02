@@ -1,7 +1,10 @@
-.elpepe{
+.elpepe {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap:15px;
-
+  gap: 15px;
+      a {
+        text-decoration: none;
+        color: white;
+     }
 }

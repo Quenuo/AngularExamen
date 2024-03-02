@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './search.component.scss'
 })
 export class SearchComponent {
+  //Search es un componente que usado para alternar entre dos rutas que redirije la pagina en producs component 
+  //y filter 
 
 }

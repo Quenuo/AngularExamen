@@ -1,28 +1,8 @@
 <mat-form-field>
   <mat-label>Filter by category:</mat-label>
   <mat-select >
-    <mat-option *ngFor="let type of types"  [value]="type" (click)="filterCategory(type)">
+    <mat-option *ngFor="let type of types"  [value]="type" [routerLink]="['/filter/',type]" routerLinkActive="active">
       {{type}}</mat-option>
   </mat-select>
 </mat-form-field>
-<ng-template ngIf="load" >
-  <div  class="cardProduct" *ngFor="let product of products" >
-    <mat-card>
-      <img [src]="product.image" mat-card-md-image />
 
-        <mat-card-title>
-          {{ product.title }}
-        </mat-card-title>
-
-
-      <mat-card-content>
-        <h3>Price: {{ product.price }}€</h3>
-        <h3>Category: {{ product.category }}</h3>
-        <h3>Rating: {{ product.rating.rate }}/5</h3>
-      </mat-card-content>
-    </mat-card>
-  </div>
-
-
-
-</ng-template>

@@ -1,20 +1,17 @@
-<div class="cardProduct" *ngFor="let product of products">
-  <mat-card >
-    <img [src]="product.image" mat-card-md-image>
-
+<div class="cardProduct">
+  <div *ngFor="let product of products; let index = index">
+    <mat-card [routerLink]="['/product/', product.id]" class="products" routerLinkActive="active">
+      <img [src]="product.image" mat-card-md-image />
 
       <mat-card-title>
-        {{product.title}}
+        {{ product.title }}
       </mat-card-title>
 
-
-
-    <mat-card-content>
-      <h3>Price: {{product.price}}€</h3>
-      <h3>Category: {{product.category}}</h3>
-      <h3>Rating: {{product.rating.rate}}/5</h3>
-    </mat-card-content>
+      <mat-card-content>
+        <h3>Price: {{ product.price }}€</h3>
+        <h3>Category: {{ product.category | titlecase }}</h3>
+        <h3>Rating: {{ product.rating.rate }}/5</h3>
+      </mat-card-content>
     </mat-card>
-
-
+  </div>
 </div>

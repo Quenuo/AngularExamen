@@ -8,6 +8,7 @@ import {Subscription} from'rxjs'
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent implements OnDestroy{
+  //Products es un compente que muestra todos los componente de la api fake store
   products:Shop[]=[]
   productsSuscription?:Subscription
   constructor(private shop:ShopService){//al drestruirse un componente se destruye,(suena tonto pero el constructo se ejecuta de nuevo al vorver de una ruta)

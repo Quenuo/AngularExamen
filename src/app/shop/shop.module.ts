@@ -6,23 +6,25 @@ import { SearchComponent } from './components/search/search.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ProductsComponent } from './components/products/products.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { MatButtonModule } from '@angular/material/button';
 import {MatFormField, MatSelectModule} from '@angular/material/select';
 import { RouterModule } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { FilterCategoriesComponent } from './components/filter/filter-categories/filter-categories.component';
+import { IdProductComponent } from './components/id-product/id-product.component';
 @NgModule({
   declarations: [
     PagesComponent,
     SearchComponent,
     ProductsComponent,
-    FilterComponent
+    FilterComponent,
+    FilterCategoriesComponent,
+    IdProductComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     MatToolbarModule,
-    MatButtonModule,
     MatSelectModule,
     MatFormField,
     RouterModule,
@@ -30,7 +32,8 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule
   ],
   exports:[
-    PagesComponent
+    PagesComponent,
+    SearchComponent
   ]
 })
 export class ShopModule { }

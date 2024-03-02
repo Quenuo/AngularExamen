@@ -19,6 +19,9 @@ export class ShopService {
 
     return this.http.get<Shop[]>(`${this.url}/category/${category}`)
   }
+  findById(id:number):Observable<Shop>{
+      return this.http.get<Shop>(`${this.url}/${id}`)
+  }
 
 
 }
