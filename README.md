@@ -1,27 +1,15 @@
-# AngelAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ //Pages es la pagina principal donde se renderizaran las rutas, si las rutas se pone algo que no he especificado en mi routing module
+  //sera redireccionado aqui
+  //Search es un componente que usado para alternar entre dos rutas que redirije la pagina en producs component 
+  //y filter 
+//Products es un compente que muestra todos los componente de la api fake store
+/IDProduct es un compente que he usado para filtrar productos por  id
+  //ademas muestra informacion detallada de cada producto,
+  //este componente se activa automaticamente al hacer click sobre un determinado componente en products o en filter-categories
+  /Flter  es un componente que he usado  para selecciona una categroia
+  //y segun esa caategoria se cambia la ruta al componente 
+  //que filter-categories
+//Filter categories es un compoenete que he usado para filtar el aray por categroias
+    //mi array mostrara todos los objetos de una categoria
+    //activated route segun la documentacion de angular proporciona informacion solbre la ruta actual del componente cargado
+    //en un routlet outlet que esta en el main page
