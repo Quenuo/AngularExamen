@@ -15,30 +15,40 @@ body {
   justify-content: center;
   gap: 5%;
   div {
-    flex: 1;
+
     padding:7%
   }
 }
 
 img {
-  margin: 0 auto;
-  margin-bottom: 5%;
+  margin: 5% auto;
+
   width: 80%;
 }
 .products {
   cursor: pointer;
+  width: 300px;
+  height: 400px;
 }
-
-mat-card {
-  padding: 2.5%;
-  margin-top: 10%;
-  width: 100%;
-
-  mat-card-title {
-    text-align: center;
+.products:hover{
+  background-color: #008b8b;
+  color:yellow;
+  mat-card-title{
+ color: #FFFFFF;
+  }
+  mat-card-content{
+    color:ghostwhite
   }
 }
 
+mat-card-title{
+  color:brown
+}
+
+
+
 mat-card-content {
   text-align: center;
+  color:olive
 }
+

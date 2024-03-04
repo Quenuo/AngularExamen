@@ -1,22 +1,30 @@
 <ng-template ngIf="load">
-  <div  class="cardProduct" *ngFor="let product of products" >
+  <div class="cardProduct" *ngFor="let product of products" >
     <mat-card>
-      <img [src]="product.image" mat-card-md-image />
+      <div>
+        <img [src]="product.image" mat-card-md-image />
+      </div>
 
-        <mat-card-title>
-          {{ product.title }}
-        </mat-card-title>
-        <mat-card-subtitle>
-          Description:{{product.description}}
-        </mat-card-subtitle>
+        <div>
+          <mat-card-title>
+            <h1>{{ product.title }}</h1>
+           </mat-card-title>
+           <mat-card-subtitle>
+             <h3> Description:{{product.description}} </h3>
 
-      <mat-card-content>
-        <h3>Price: {{ product.price }}€</h3>
-        <h3>Category: {{ product.category |titlecase}}</h3>
-        <h3>Rating: {{ product.rating.rate }}/5</h3>
-        <h3>Numbers: {{product.rating.count}}</h3>
-        <h3>ProductID: {{product.id}}</h3>
-      </mat-card-content>
+           </mat-card-subtitle>
+
+         <mat-card-content>
+           <h3>Price: {{ product.price }}€</h3>
+           <h3>Category: {{ product.category |titlecase}}</h3>
+           <h3>Rating: {{ product.rating.rate }}/5</h3>
+           <h3>Numbers: {{product.rating.count}}</h3>
+           <h3>ProductID: {{product.id}}</h3>
+         </mat-card-content>
+
+        </div>
+
+
     </mat-card>
   </div>
 </ng-template>

@@ -12,6 +12,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { FilterCategoriesComponent } from './components/filter/filter-categories/filter-categories.component';
 import { IdProductComponent } from './components/id-product/id-product.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     PagesComponent,
@@ -29,7 +31,9 @@ import { IdProductComponent } from './components/id-product/id-product.component
     MatFormField,
     RouterModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatTableModule
   ],
   exports:[
     PagesComponent,
